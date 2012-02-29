@@ -6,16 +6,15 @@ window.FacturaModel = Backbone.RelationalModel.extend({
         relatedModel: 'ItemFacturaModel',
         collectionType: 'ItemFacturaCollection',
         reverseRelation: {
-            key: 'factura_id',
-            includeInJSON: 'id'
-            // 'relatedModel' is automatically set to 'Zoo'; the 'relationType' to 'HasOne'.
+            key: 'factura_id'
         }
     }],
 
     defaults:{
         "id":1,
         "cliente_id":0,
-        "descuento_valores":0,
+        "descuento":0,
+        "descuento_ui":0,
         "descuento_tipo":1,
         "dias_alquiler":5,
         "fecha_inicio":"2012-01-01 12:00:00",

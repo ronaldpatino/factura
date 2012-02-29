@@ -12,28 +12,48 @@ window.ItemFacturaView = Backbone.View.extend({
         console.log('Init ItemFacturaView');
 
         this.template = _.template(tpl.get('item-factura-template'));
-        //cuando el modelo cambia, actualizo la vista
         this.model.bind("change", this.render, this);
-
     },
 
 
     render:function () {
-        $(this.el).html(this.template(this.model.get('factura_detalle').at(this.options.indice).toJSON()));
+
+        $(this.el).html(this.template(this.model.toJSON()));
         return this;
     },
 
     calcularValores: function() {
+        this.calcularSubTotal();
+        this.calcularDescuento();
 
+    },
 
+    calcularSubTotal: function(){
+        this.model.set('cantidad_devuelta',this.$('#cantidad_select').val());
 
-        this.model.get('factura_detalle').at(this.options.indice).set('cantidad_devuelta',this.$('#cantidad_select').val());
+        var valor_total =   this.model.get('cantidad_devuelta') *
+            this.model.get('dias_renovar') *
+            this.model.get('valor_unitario');
 
-        var valor_total =   this.model.get('factura_detalle').at(this.options.indice).get('cantidad_devuelta') *
-                            this.model.get('factura_detalle').at(this.options.indice).get('dias_renovar') *
-                            this.model.get('factura_detalle').at(this.options.indice).get('valor_unitario');
+        this.model.set('valor_total', valor_total);
 
-        this.model.get('factura_detalle').at(this.options.indice).set('valor_total', valor_total);
+        var subtotal = 0;
+
+        _.each(this.model.get('factura_id').get('factura_detalle').models, function (item) {
+            subtotal += item.get('valor_total');
+        }, this);
+
+        this.model.get('factura_id').set('subtotal',subtotal);
+    },
+
+    calcularDescuento: function(){
+
+        var descuento_interfaz = window.$('#descuento').val();
+        alert(descuento_interfaz);
+        var descuento_ui = this.model.get('factura_id').get('subtotal') - descuento_interfaz;
+
+        this.model.set('descuento_ui', descuento_ui);
+
 
     }
 
