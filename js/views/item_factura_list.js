@@ -12,7 +12,8 @@ window.ItemFacturaListView = Backbone.View.extend({
 
     render:function () {
 
-        _.each(this.model.models, function (item) {
+        _.each(this.model.get('factura_detalle').models, function (item) {
+            console.log(item)
             $(this.el).append(new ItemFacturaView({model:item}).render().el);
         }, this);
         return this;

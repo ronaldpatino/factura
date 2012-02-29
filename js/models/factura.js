@@ -1,4 +1,16 @@
-window.FacturaModel = Backbone.Model.extend({
+window.FacturaModel = Backbone.RelationalModel.extend({
+
+    relations: [{
+        type: Backbone.HasMany,
+        key: 'factura_detalle',
+        relatedModel: 'ItemFacturaModel',
+        collectionType: 'ItemFacturaCollection',
+        reverseRelation: {
+            key: 'factura_id',
+            includeInJSON: 'id'
+            // 'relatedModel' is automatically set to 'Zoo'; the 'relationType' to 'HasOne'.
+        }
+    }],
 
     defaults:{
         "id":1,
@@ -12,6 +24,7 @@ window.FacturaModel = Backbone.Model.extend({
         "numero":123,
         "proyecto":"BACKBONE",
         "referencia":0,
+        "subtotal":0,
         "total":0,
         "transporte":0,
         "tipo":"ALQ",

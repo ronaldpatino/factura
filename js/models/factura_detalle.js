@@ -1,13 +1,15 @@
-window.ItemFacturaModel = Backbone.Model.extend({
+window.ItemFacturaModel = Backbone.RelationalModel.extend({
 
     defaults:{
-        descripcion:"N/A",
-        cantidad_alquilada:10,
-        cantidad:0,
-        cantidad_devolver:0,
-        dias_renovar:1,
-        valor_unitario:10,
-        valor_total:0
+        "cantidad":0,
+        "cantidad_devuelta":0,
+        "factura_id":0,
+        "item_id":1,
+        "tipo_item":1,
+        "valor_unitario":0,
+        "valor_total":0,
+        "descripcion":"ITEM NA",
+        "dias_renovar":0
     },
 
     initialize:function () {

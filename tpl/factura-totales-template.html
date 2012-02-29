@@ -1,0 +1,55 @@
+<tr>
+    <td colspan="4">&nbsp;</td>
+    <td>SUBT</td>
+    <td>
+        $ <%=subtotal%></span>
+    </td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="4">&nbsp;</td>
+    <td>DESC</td>
+    <td>
+        <input type="text" name="descuento" id="descuento" value="0">
+    </td>
+    <td>
+        <select id="descuento_tipo" name="descuento_tipo">
+            <option selected="selected" value="1">$</option>
+            <option value="2">%</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">&nbsp;</td>
+    <td>SUBT - DESC</td>
+    <td>
+        $ <%=descuento%></span>
+    </td>
+    <td>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">&nbsp;</td>
+    <td>IVA</td>
+    <td>
+        $ <%=iva%></span>
+    </td>
+    <td>
+        <select id="iva_tipo" name="iva_tipo">
+            <option selected="selected" value="12">12%</option>
+            <option value="0">0%</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">&nbsp;</td>
+    <td>TOTAL</td>
+    <td>
+        $ <%=total%>
+    </td>
+    <td>
+    </td>
+</tr>
