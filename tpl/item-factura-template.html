@@ -1,0 +1,22 @@
+
+    <td><%=descripcion%></td>
+    <td><%=cantidad_alquilada%></td>
+    <td>
+        <select class="cantidad_devolver" style="width:60px !important;">
+            <%
+            _.each(cantidad_devolver_list, function (num){
+            %>
+
+            <option value="<%=num%>"><%=num%></option>
+
+            <%
+            });
+            %>
+        </select>
+    </td>
+    <td><span class="dias_renovar"><%=dias_renovar%></span></td>
+    <td>$ <%=valor_unitario%></td>
+    <td>$ <span class="valor_total"><%= valor_total%></span></td>
+    <td></td>
+
+
