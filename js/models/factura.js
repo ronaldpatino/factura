@@ -14,7 +14,8 @@ window.FacturaModel = Backbone.Model.extend({
         "referencia":0,
         "total":0,
         "transporte":0,
-        "tipo":"ALQ"
+        "tipo":"ALQ",
+        "factura_detalle": []
     },
 
     initialize:function () {

@@ -1,7 +1,7 @@
 //Vistas
 window.ItemFacturaListView = Backbone.View.extend({
 
-    tagName:'tr',
+    tagName:'tbody',
 
     initialize: function()
     {
@@ -12,11 +12,11 @@ window.ItemFacturaListView = Backbone.View.extend({
 
     render:function () {
 
-        //$(this.el).html(this.template(this.model.toJSON()));
         _.each(this.model.models, function (item) {
             $(this.el).append(new ItemFacturaView({model:item}).render().el);
         }, this);
         return this;
+
     }
 
 })

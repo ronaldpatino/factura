@@ -15,7 +15,9 @@ window.FacturaView = Backbone.View.extend({
         var itemFacturaListView = new ItemFacturaListView({model:itemFacturaCollection});
 
         $(this.el).html(this.template());
+
         $('#factura_detalle', this.el).html(itemFacturaListView.render().el);
+
         return this;
     }
 });
