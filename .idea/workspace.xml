@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="395529f5-5b46-4279-9762-098d88c668f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/factura_totales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/backbone-relational.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/factura-totales-template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/factura.js" afterPath="$PROJECT_DIR$/js/models/factura.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/factura_detalle.js" afterPath="$PROJECT_DIR$/js/models/factura_detalle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/factura.js" afterPath="$PROJECT_DIR$/js/views/factura.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/factura_totales.js" afterPath="$PROJECT_DIR$/js/views/factura_totales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/item_factura.js" afterPath="$PROJECT_DIR$/js/views/item_factura.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/item_factura_list.js" afterPath="$PROJECT_DIR$/js/views/item_factura_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/data.js" afterPath="$PROJECT_DIR$/lib/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/main.js" afterPath="$PROJECT_DIR$/lib/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/factura-totales-template.html" afterPath="$PROJECT_DIR$/tpl/factura-totales-template.html" />
     </list>
     <ignored path="factura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="item_factura.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="39" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+            <state line="37" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,16 +43,16 @@
       <file leaf-file-name="factura.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/views/factura.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="11" column="31" selection-start="237" selection-end="256" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="factura_totales.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="44" selection-start="437" selection-end="437" vertical-scroll-proportion="-13.076923">
+            <state line="9" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,16 +61,16 @@
       <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="352" selection-end="367" vertical-scroll-proportion="0.0">
+            <state line="3" column="22" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factura_detalle.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/models/factura_detalle.js">
+      <file leaf-file-name="factura-totales-template.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/factura-totales-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+            <state line="26" column="30" selection-start="593" selection-end="593" vertical-scroll-proportion="-17.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +79,7 @@
       <file leaf-file-name="item_factura_list.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/views/item_factura_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="383" selection-end="383" vertical-scroll-proportion="0.6129808">
+            <state line="15" column="52" selection-start="377" selection-end="377" vertical-scroll-proportion="0.6129808">
               <folding />
             </state>
           </provider>
@@ -110,17 +107,17 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tpl/item-factura-template.html" />
         <option value="$PROJECT_DIR$/tpl/factura-template.html" />
-        <option value="$PROJECT_DIR$/lib/data.js" />
-        <option value="$PROJECT_DIR$/js/views/factura_totales.js" />
         <option value="$PROJECT_DIR$/lib/main.js" />
-        <option value="$PROJECT_DIR$/tpl/factura-totales-template.html" />
-        <option value="$PROJECT_DIR$/js/views/item_factura.js" />
         <option value="$PROJECT_DIR$/lib/backbone-relational.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/models/factura.js" />
         <option value="$PROJECT_DIR$/js/models/factura_detalle.js" />
         <option value="$PROJECT_DIR$/js/views/factura.js" />
+        <option value="$PROJECT_DIR$/lib/data.js" />
+        <option value="$PROJECT_DIR$/js/models/factura.js" />
+        <option value="$PROJECT_DIR$/tpl/factura-totales-template.html" />
+        <option value="$PROJECT_DIR$/js/views/factura_totales.js" />
         <option value="$PROJECT_DIR$/js/views/item_factura_list.js" />
+        <option value="$PROJECT_DIR$/js/views/item_factura.js" />
       </list>
     </option>
   </component>
@@ -334,25 +331,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1368" height="776" extended-state="0" />
+    <frame x="-4" y="-4" width="1368" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25914633" sideWeight="0.67021275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682927" sideWeight="0.67021275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5775076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -392,7 +389,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed html nesting in the invoice table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added backbone-relational ( https://github.com/PaulUithol/Backbone-relational) to load json data and use it as a model" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -409,6 +406,7 @@
     <MESSAGE value="Loaded a master detail data sample, and catching the view changes to update the model and of course auto update the view" />
     <MESSAGE value="Added README.md" />
     <MESSAGE value="fixed html nesting in the invoice table" />
+    <MESSAGE value="Added backbone-relational ( https://github.com/PaulUithol/Backbone-relational) to load json data and use it as a model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -416,112 +414,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tpl/pagina-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="10" selection-end="10" vertical-scroll-proportion="0.043589745">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="10" selection-end="10" vertical-scroll-proportion="0.043589745" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/pagina.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="78" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="78" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/item-factura-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="457" selection-end="457" vertical-scroll-proportion="0.36408567">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/factura-totales-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="44" selection-start="681" selection-end="681" vertical-scroll-proportion="1.0682226">
-          <folding />
-        </state>
+        <state line="13" column="28" selection-start="457" selection-end="457" vertical-scroll-proportion="0.36408567" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/factura-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="37" selection-end="37" vertical-scroll-proportion="0.056013178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="320" selection-end="320" vertical-scroll-proportion="0.37598735">
-          <folding />
-        </state>
+        <state line="2" column="4" selection-start="37" selection-end="37" vertical-scroll-proportion="0.056013178" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/backbone-relational.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="93" selection-start="576" selection-end="576" vertical-scroll-proportion="0.72511846">
-          <folding />
-        </state>
+        <state line="27" column="93" selection-start="576" selection-end="576" vertical-scroll-proportion="0.72511846" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="437" selection-end="437" vertical-scroll-proportion="-13.076923">
+        <state line="20" column="44" selection-start="437" selection-end="437" vertical-scroll-proportion="0.8717949" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/factura_detalle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="42" selection-start="449" selection-end="449" vertical-scroll-proportion="0.5371248" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/factura.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="513" selection-end="513" vertical-scroll-proportion="0.2748815">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+        <state line="37" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/factura.js">
+    <entry file="file://$PROJECT_DIR$/tpl/factura-totales-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/factura.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="339" selection-end="339" vertical-scroll-proportion="0.2685624">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/factura_detalle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+        <state line="26" column="30" selection-start="593" selection-end="593" vertical-scroll-proportion="-17.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="352" selection-end="367" vertical-scroll-proportion="0.0">
+        <state line="3" column="22" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/factura.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="237" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/item_factura_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="383" selection-end="383" vertical-scroll-proportion="0.6129808">
+        <state line="15" column="52" selection-start="377" selection-end="377" vertical-scroll-proportion="0.6129808">
           <folding />
         </state>
       </provider>

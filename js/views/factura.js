@@ -5,15 +5,9 @@ window.FacturaView = Backbone.View.extend({
         this.template = _.template(tpl.get('factura-template'));
     },
 
-    events:{
-    },
 
     render:function () {
 
-
-        //var itemFacturaCollection = new ItemFacturaCollection(this.model.get('factura_detalle'));
-
-        //var itemFacturaListView = new ItemFacturaListView({model:itemFacturaCollection});
 
         var itemFacturaListView = new ItemFacturaListView({model:this.model});
         var facturaTotales = new FacturaTotalesView({model:this.model});

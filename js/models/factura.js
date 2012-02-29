@@ -15,7 +15,7 @@ window.FacturaModel = Backbone.RelationalModel.extend({
     defaults:{
         "id":1,
         "cliente_id":0,
-        "descuento":0,
+        "descuento_valores":0,
         "descuento_tipo":1,
         "dias_alquiler":5,
         "fecha_inicio":"2012-01-01 12:00:00",
@@ -32,7 +32,8 @@ window.FacturaModel = Backbone.RelationalModel.extend({
     },
 
     initialize:function () {
-        console.log('Creado Modelo Factura')
+        console.log('Creado Modelo Factura');
     }
+
 
 });

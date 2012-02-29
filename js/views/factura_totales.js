@@ -5,9 +5,7 @@ window.FacturaTotalesView = Backbone.View.extend({
     initialize:function () {
         console.log('Initializing FacturaTotales View');
         this.template = _.template(tpl.get('factura-totales-template'));
-    },
-
-    events:{
+        this.model.bind("change", this.render, this);
     },
 
     render:function () {
