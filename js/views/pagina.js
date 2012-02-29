@@ -11,7 +11,6 @@ window.PaginaView = Backbone.View.extend({
 
     render:function () {
 
-
         var facturaView = new FacturaView({model:this.model});
         $(this.el).html(this.template());
         $('#detalles', this.el).html(facturaView.render().el);
