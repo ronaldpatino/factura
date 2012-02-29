@@ -1,16 +1,20 @@
 
     <td><%=descripcion%></td>
-    <td><%=cantidad_alquilada%></td>
+    <td><%=cantidad%></td>
     <td>
-        <select style="width:60px !important;">
-            <% for (var i = 0; i <= cantidad; i++) {%>
-                <option value="<%=i%>"><%=i%></option>
+        <select id="cantidad_select" style="width:60px !important;">
+            <% for (var i = 0; i <= cantidad; i++) { %>
+                <% if (i == cantidad_devuelta) { %>
+                    <option selected="selected" value="<%=i%>"><%=i%></option>
+                <% } else {%>
+                    <option value="<%=i%>"><%=i%></option>
+                <% } %>
             <% };%>
         </select>
     </td>
     <td><%=dias_renovar%></td>
     <td>$ <%=valor_unitario%></td>
-    <td>$ <%= valor_total%></td>
+    <td>$ <%=valor_total%></td>
     <td></td>
 
 

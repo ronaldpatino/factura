@@ -10,8 +10,9 @@ window.FacturaView = Backbone.View.extend({
 
     render:function () {
 
+        var itemFacturaCollection = new ItemFacturaCollection(this.model.get('factura_detalle'));
 
-        var itemFacturaListView = new ItemFacturaListView({model:this.model});
+        var itemFacturaListView = new ItemFacturaListView({model:itemFacturaCollection});
 
         $(this.el).html(this.template());
         $('#factura_detalle', this.el).html(itemFacturaListView.render().el);
