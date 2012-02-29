@@ -3,15 +3,9 @@
     <td><%=cantidad_alquilada%></td>
     <td>
         <select class="cantidad_devolver" style="width:60px !important;">
-            <%
-            _.each(cantidad_devolver_list, function (num){
-            %>
-
-            <option value="<%=num%>"><%=num%></option>
-
-            <%
-            });
-            %>
+            <% for (var i = 0; i <= cantidad; i++) {%>
+                <option value="<%=i%>"><%=i%></option>
+            <% };%>
         </select>
     </td>
     <td><span class="dias_renovar"><%=dias_renovar%></span></td>

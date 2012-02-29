@@ -10,10 +10,11 @@ window.PaginaView = Backbone.View.extend({
     },
 
     render:function (eventName) {
-        var facturaView = new FacturaView();
-        $(this.el).html(this.template());
-        $('#detalles', this.el).html(facturaView.render().render().el);
+        var itemFacturaModel = new ItemFacturaModel();
 
+        var facturaView = new FacturaView({model:itemFacturaModel});
+        $(this.el).html(this.template());
+        $('#detalles', this.el).html(facturaView.render().el);
 
         return this;
     }
