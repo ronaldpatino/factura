@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="395529f5-5b46-4279-9762-098d88c668f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/factura.js" afterPath="$PROJECT_DIR$/js/models/factura.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/item_factura.js" afterPath="$PROJECT_DIR$/js/views/item_factura.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/data.js" afterPath="$PROJECT_DIR$/lib/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/factura-totales-template.html" afterPath="$PROJECT_DIR$/tpl/factura-totales-template.html" />
     </list>
     <ignored path="factura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="item_factura_list.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/item_factura_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="item_factura.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="34" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.9495192">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factura.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/factura.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="237" selection-end="256" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factura_totales.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="2" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
+            <state line="103" column="42" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.9495192">
               <folding />
             </state>
           </provider>
@@ -54,7 +49,16 @@
       <file leaf-file-name="factura-totales-template.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/factura-totales-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="577" selection-end="589" vertical-scroll-proportion="0.0">
+            <state line="32" column="13" selection-start="862" selection-end="874" vertical-scroll-proportion="1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,10 +92,10 @@
         <option value="$PROJECT_DIR$/js/models/factura_detalle.js" />
         <option value="$PROJECT_DIR$/js/views/factura.js" />
         <option value="$PROJECT_DIR$/js/views/item_factura_list.js" />
+        <option value="$PROJECT_DIR$/js/views/factura_totales.js" />
+        <option value="$PROJECT_DIR$/tpl/factura-totales-template.html" />
         <option value="$PROJECT_DIR$/js/models/factura.js" />
         <option value="$PROJECT_DIR$/lib/data.js" />
-        <option value="$PROJECT_DIR$/tpl/factura-totales-template.html" />
-        <option value="$PROJECT_DIR$/js/views/factura_totales.js" />
         <option value="$PROJECT_DIR$/js/views/item_factura.js" />
       </list>
     </option>
@@ -132,7 +136,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -143,15 +147,109 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -215,12 +313,11 @@
     <frame x="-4" y="-4" width="1368" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2682927" sideWeight="0.67021275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27286586" sideWeight="0.67021275" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -231,6 +328,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5775076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -339,41 +437,51 @@
         <state line="20" column="42" selection-start="449" selection-end="449" vertical-scroll-proportion="0.5371248" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/item_factura_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.5371248" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="103" selection-end="103" vertical-scroll-proportion="0.10742496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/factura.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="643" selection-end="651" vertical-scroll-proportion="0.5165877" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/views/factura.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="237" selection-end="256" vertical-scroll-proportion="0.0" />
+        <state line="11" column="31" selection-start="237" selection-end="256" vertical-scroll-proportion="0.34615386">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="2" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" />
+        <state line="35" column="2" selection-start="954" selection-end="954" vertical-scroll-proportion="0.59134614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/factura.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="526" selection-end="526" vertical-scroll-proportion="0.3823065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/item_factura_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/factura-totales-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="577" selection-end="589" vertical-scroll-proportion="0.0">
+        <state line="32" column="13" selection-start="862" selection-end="874" vertical-scroll-proportion="1.9615384">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="34" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.9495192">
+        <state line="103" column="42" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.9495192">
           <folding />
         </state>
       </provider>

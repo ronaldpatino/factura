@@ -14,8 +14,14 @@
     </td>
     <td>
         <select id="descuento_tipo" name="descuento_tipo">
-            <option selected="selected" value="1">$</option>
-            <option value="2">%</option>
+            <% _.each([1, 2], function(num) { %>
+                <% var simbolo = (num == 1)?'$':'%'; %>
+                <% if (descuento_tipo == num) { %>
+                    <option selected="selected" value="<%=num%>"><%=simbolo%></option>
+                <% } else { %>
+                    <option value="<%=num%>"><%=simbolo%></option>
+                <% } %>
+            <% }); %>
         </select>
     </td>
 </tr>
@@ -38,8 +44,15 @@
     </td>
     <td>
         <select id="iva_tipo" name="iva_tipo">
-            <option selected="selected" value="12">12%</option>
-            <option value="0">0%</option>
+            <% _.each([0, 12], function(num) { %>
+                <% var simbolo = (num == 0)?'0 %':'12 %'; %>
+                <% if (iva_tipo == num) { %>
+                    <option selected="selected" value="<%=num%>"><%=simbolo%></option>
+                <% } else { %>
+                    <option value="<%=num%>"><%=simbolo%></option>
+                <% } %>
+            <% }); %>
+
         </select>
     </td>
 </tr>
