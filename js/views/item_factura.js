@@ -68,6 +68,7 @@ window.ItemFacturaView = Backbone.View.extend({
                 var descuento_ui = this.model.get('factura_id').get('subtotal') - this.descuento_interfaz;
                 this.model.get('factura_id').set('descuento_ui', descuento_ui);
                 this.model.get('factura_id').set('descuento_tipo', this.descuento_tipo_interfaz);
+                this.model.get('factura_id').set('descuento', this.descuento_interfaz);
             }
             else
             {
@@ -83,6 +84,7 @@ window.ItemFacturaView = Backbone.View.extend({
                 var descuento_ui = this.model.get('factura_id').get('subtotal') - descuento_porcentaje;
                 this.model.get('factura_id').set('descuento_ui', descuento_ui);
                 this.model.get('factura_id').set('descuento_tipo', this.descuento_tipo_interfaz);
+                this.model.get('factura_id').set('descuento', this.descuento_interfaz);
             }
             else
             {
