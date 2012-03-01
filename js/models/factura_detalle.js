@@ -1,7 +1,8 @@
 window.ItemFacturaModel = Backbone.RelationalModel.extend({
 
     defaults:{
-        "cantidad":0,
+        "id":0,
+		"cantidad":0,
         "cantidad_devuelta":0,
         "factura_id":0,
         "item_id":1,
