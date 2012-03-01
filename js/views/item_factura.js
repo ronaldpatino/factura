@@ -123,11 +123,20 @@ window.ItemFacturaView = Backbone.View.extend({
                                     this.model.get('factura_id').get('descuento')) +
                                     this.model.get('factura_id').get('iva');
 
+            total_factura = mat.redondear(total_factura,2);
+
             this.model.get('factura_id').set('total', total_factura);
+            this.options.botones.set('principal_activo','')
         }
         else
         {
+
             this.model.get('factura_id').set('total', 0);
+            if (this.options.botones.get('principal_cliked') == 0 || this.options.botones.get('principal_activo') === '')
+            {
+                this.options.botones.set('principal_activo','disabled="disabled"')
+            }
+
         }
     }
 

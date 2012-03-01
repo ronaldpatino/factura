@@ -1,5 +1,7 @@
 window.FacturaModel = Backbone.RelationalModel.extend({
 
+    url: 'http://localhost/haras/renovacion/api/guardar/',
+
     relations: [{
         type: Backbone.HasMany,
         key: 'factura_detalle',
@@ -33,6 +35,20 @@ window.FacturaModel = Backbone.RelationalModel.extend({
 
     initialize:function () {
         console.log('Creado Modelo Factura');
+    },
+
+    guardar: function(){
+
+        var options = {
+            success: function(model, resp, xhr) {
+                alert('tout est bien!!!')
+            },
+
+            error: function(model, resp, xhr) {
+                alert('error');
+            }
+        }
+        return Backbone.sync('create', this, options);
     }
 
 

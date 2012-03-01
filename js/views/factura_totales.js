@@ -95,15 +95,25 @@ window.FacturaTotalesView = Backbone.View.extend({
 
     calcularTotal: function () {
         if (this.model.get('subtotal') > 0 ) {
+
             var total_factura = (   this.model.get('subtotal') -
                 this.model.get('descuento')) +
                 this.model.get('iva');
 
+            total_factura = mat.redondear(total_factura,2);
+
             this.model.set('total', total_factura);
+            this.options.botones.set('principal_activo','')
         }
         else
         {
+            console.log(this.options.botones.get('principal_activo'));
             this.model.set('total', 0);
+            if (this.options.botones.get('principal_cliked') == 0 || this.options.botones.get('principal_activo') === '')
+            {
+                this.options.botones.set('principal_activo','disabled="disabled"')
+            }
+
         }
     }
 
