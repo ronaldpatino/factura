@@ -21,5 +21,4 @@ window.FacturaBotonesView = Backbone.View.extend({
         this.options.botones.set('principal_clicked',1);
         this.model.guardar();
     }
-
 });
