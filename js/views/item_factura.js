@@ -27,6 +27,7 @@ window.ItemFacturaView = Backbone.View.extend({
         this.calcularSubTotal();
         this.calcularDescuento();
         this.calcularIva();
+        this.calcularTotal();
     },
 
     getVariablesInterfaz: function(){
@@ -96,6 +97,7 @@ window.ItemFacturaView = Backbone.View.extend({
             if (this.iva_tipo_interfaz == 12)
             {
                 var valor_iva = this.model.get('factura_id').get('descuento_ui') * 0.12;
+                valor_iva = mat.redondear(valor_iva,2);
                 this.model.get('factura_id').set('iva_tipo', 12);
             }
             else
@@ -106,6 +108,24 @@ window.ItemFacturaView = Backbone.View.extend({
 
             this.model.get('factura_id').set('iva', valor_iva);
 
+        }
+        else
+        {
+            this.model.get('factura_id').set('iva', 0);
+        }
+    },
+
+    calcularTotal: function () {
+        if (this.model.get('factura_id').get('subtotal') > 0 ) {
+            var total_factura = (   this.model.get('factura_id').get('subtotal') -
+                                    this.model.get('factura_id').get('descuento')) +
+                                    this.model.get('factura_id').get('iva');
+
+            this.model.get('factura_id').set('total', total_factura);
+        }
+        else
+        {
+            this.model.get('factura_id').set('total', 0);
         }
     }
 

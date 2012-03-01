@@ -33,3 +33,17 @@ tpl = {
     }
 
 };
+
+mat = {
+
+    redondear: function(number, decimals /* optional, default 0 */)
+    {
+        var _round = Math.round;
+
+        if (arguments.length == 1)
+            return _round(number);
+
+        var multiplier = Math.pow(10, decimals);
+        return _round(number * multiplier) / multiplier;
+    }
+}
