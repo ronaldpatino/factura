@@ -19,15 +19,15 @@ window.FacturaView = Backbone.View.extend({
         });
 
         var itemFacturaListView = new ItemFacturaListView({model:this.model, botones:facturaBotonesModel});
-        var facturaTotales = new FacturaTotalesView({model:this.model, botones:facturaBotonesModel});
-        var facturaBotones = new FacturaBotonesView({model:this.model, botones:facturaBotonesModel});
+        var facturaTotalesView = new FacturaTotalesView({model:this.model, botones:facturaBotonesModel});
+        var facturaBotonesView = new FacturaBotonesView({model:this.model, botones:facturaBotonesModel});
         var facturaDiasView = new FacturaDiasView({model:this.model});
 
         $(this.el).html(this.template());
 
         $('#factura_detalle', this.el).html(itemFacturaListView.render().el);
-        $('#factura_detalle', this.el).append(facturaTotales.render().el);
-        $('#factura_botones', this.el).append(facturaBotones.render().el);
+        $('#factura_detalle', this.el).append(facturaTotalesView.render().el);
+        $('#factura_botones', this.el).append(facturaBotonesView.render().el);
         $('#factura_dias', this.el).append(facturaDiasView.render().el);
 
         return this;
