@@ -35,7 +35,7 @@ window.FacturaDiasView = Backbone.View.extend({
 
     calcularDescuento: function(){
 
-        console.log('calcular descuento ??')
+        console.log('calculamos descuento en ')
         if (this.descuento_tipo_interfaz == 1)
         {
             if (this.model.get('subtotal') > this.descuento_interfaz)
