@@ -1,0 +1,23 @@
+Dias
+        aca <%=model.factura_detalle['0'].dias_renovar%>
+<select id="numero_dias_renovar">
+    <%
+    _.each(_.range(1, 366), function (num){
+    %>
+        <%if (num == 1){ %>
+            <%if (num == model.factura_detalle[dias_renovar].dias_renovar){ %>
+                <option selected="selected" value="<%=num%>"><%=num%> D&iacute;a</option>
+            <% }else { %>
+                <option value="<%=num%>"><%=num%> D&iacute;as</option>
+            <% }%>
+
+        <% }else { %>
+            <%if (num == model.factura_detalle[dias_renovar].dias_renovar){ %>
+                <option selected="selected" value="<%=num%>"><%=num%> D&iacute;a</option>
+            <% }else { %>
+                <option value="<%=num%>"><%=num%> D&iacute;as</option>
+            <% }%>
+        <% }%>
+    <%});%>
+</select>
+
