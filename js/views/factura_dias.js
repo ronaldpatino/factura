@@ -4,7 +4,6 @@ window.FacturaDiasView = Backbone.View.extend({
         "change #numero_dias_renovar": "calcularValores"
     },
 
-    dias_renovar : 0,
 
     initialize:function () {
         console.log('Initializing Factura Dias View');
@@ -14,13 +13,15 @@ window.FacturaDiasView = Backbone.View.extend({
     },
 
     render:function () {
-        $(this.el).html(this.template({model:this.model.toJSON(), dias_renovar: this.dias_renovar}));
+        $(this.el).html(this.template({model:this.model.toJSON()}));
         return this;
     },
 
     calcularValores: function() {
+
         this.getVariablesInterfaz();
         this.cambiarDias();
+        this.calcularSubTotal();
         this.calcularDescuento();
         this.calcularIva();
         this.calcularTotal();
@@ -28,14 +29,35 @@ window.FacturaDiasView = Backbone.View.extend({
 
     getVariablesInterfaz: function(){
         this.dias_renovar = this.$('#numero_dias_renovar').val();
-        this.descuento_interfaz = this.$('#descuento').val();
-        this.descuento_tipo_interfaz = this.$('#descuento_tipo').val();
-        this.iva_tipo_interfaz = this.$('#iva_tipo').val();
+        this.descuento_interfaz = window.$('#descuento').val();
+        this.descuento_tipo_interfaz = window.$('#descuento_tipo').val();
+        this.iva_tipo_interfaz = window.$('#iva_tipo').val();
+    },
+
+    calcularSubTotal: function(){
+
+        console.log('calculamos SUBTOTAL en FacturaDiasView')
+        var subtotal = 0;
+
+        _.each(this.model.get('factura_detalle').models, function (item) {
+
+
+            var valor_total =   item.get('cantidad_devuelta') *
+                    item.get('dias_renovar') *
+                    item.get('valor_unitario');
+
+            item.set('valor_total', valor_total);
+
+
+            subtotal += item.get('valor_total');
+        }, this);
+
+        this.model.set('subtotal',subtotal);
+        this.model.set('descuento',this.descuento_interfaz);
     },
 
     calcularDescuento: function(){
 
-        console.log('calculamos descuento en ')
         if (this.descuento_tipo_interfaz == 1)
         {
             if (this.model.get('subtotal') > this.descuento_interfaz)

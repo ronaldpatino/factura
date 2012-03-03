@@ -10,7 +10,7 @@ window.ItemFacturaModel = Backbone.RelationalModel.extend({
         "valor_unitario":0,
         "valor_total":0,
         "descripcion":"ITEM NA",
-        "dias_renovar":0
+        "dias_renovar":1
     },
 
     initialize:function () {
