@@ -1,2 +1,12 @@
-   <a href="<%=botones.get('secundario_url')%>"><%=botones.get('secundario_label')%></a>
-   <button class="primaryAction" <%=botones.get('principal_activo')%> id="guardar_factura" value="guardar_factura"><%=botones.get('principal_label')%></button>
+
+    <div id="grabar_factura_botones">
+        <a href="<%=botones.get('secundario_url')%>"><%=botones.get('secundario_label')%></a>
+        <button class="primaryAction"
+        <%=botones.get('principal_activo')%> id="guardar_factura"
+        value="guardar_factura"><%=botones.get('principal_label')%></button>
+    </div>
+
+    <div id="imprimir_factura_botones" style="display: none;">
+        <a href="#">Imprimir</a>
+        <a class="primaryAction" href="<%=botones.get('secundario_url')%>"><%=botones.get('secundario_label')%></a>
+    </div>

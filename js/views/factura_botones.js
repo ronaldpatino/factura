@@ -1,7 +1,8 @@
 window.FacturaBotonesView = Backbone.View.extend({
 
     events:{
-        "click #guardar_factura": "guardarFactura"
+        "click #guardar_factura": "guardarFactura" ,
+        "click #imprimir_factura_botones": "imprimirFactura"
     },
 
     initialize:function () {
@@ -22,6 +23,15 @@ window.FacturaBotonesView = Backbone.View.extend({
         this.options.botones.set('principal_label','CHANGOS');
         this.options.botones.set('secundario_label','Imprimir');
         this.options.botones.set('principal_clicked',1);
+
+        this.$('#grabar_factura_botones').hide();
+        this.$('#imprimir_factura_botones').show();
+
         this.model.guardar();
+    },
+
+    imprimirFactura: function()
+    {
+        mensaje.fancybox('http://localhost/haras/renovacion/comp/imprimir_factura/1');
     }
 });
