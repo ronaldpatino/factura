@@ -34,7 +34,8 @@ window.FacturaModel = Backbone.RelationalModel.extend({
         "botones_guardar":'',
         "botones_imprimir":'style="display:none;"',
         "boton_cliked":0,
-        "boton_activo":'disabled="disabled"'
+        "boton_activo":'disabled="disabled"',
+        "id_factura_creada":0
 
     },
 
@@ -48,12 +49,16 @@ window.FacturaModel = Backbone.RelationalModel.extend({
 
         var options = {
             success: function(model, resp, xhr) {
+
+                var respuesta = JSON.parse(xhr.responseText)
                 //Let the user know we were able to save in the db
                 mensaje.notifyBar('Factura Guardada', 'success', false);
                 //Hide save buttons
                 self.set('botones_guardar','style="display:none;');
                 //Show print buttons
                 self.set('botones_imprimir','');
+
+                self.set('id_factura_creada', respuesta.id);
             },
 
             error: function(model, resp, xhr) {
