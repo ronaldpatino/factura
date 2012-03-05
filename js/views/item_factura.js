@@ -125,15 +125,15 @@ window.ItemFacturaView = Backbone.View.extend({
             total_factura = mat.redondear(total_factura,2);
 
             this.model.get('factura_id').set('total', total_factura);
-            this.options.botones.set('principal_activo','')
+            this.model.get('factura_id').set('boton_activo','UU')
         }
         else
         {
 
             this.model.get('factura_id').set('total', 0);
-            if (this.options.botones.get('principal_cliked') == 0 || this.options.botones.get('principal_activo') === '')
+            if (this.model.get('factura_id').get('total') == 0)
             {
-                this.options.botones.set('principal_activo','disabled="disabled"')
+                this.model.get('factura_id').set('boton_activo','disabled="disabled"');
             }
 
         }

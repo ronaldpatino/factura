@@ -30,7 +30,12 @@ window.FacturaModel = Backbone.RelationalModel.extend({
         "total":0,
         "transporte":0,
         "tipo":"ALQ",
-        "factura_detalle": []
+        "factura_detalle": [],
+        "botones_guardar":'',
+        "botones_imprimir":'style="display:none;"',
+        "boton_cliked":0,
+        "boton_activo":'disabled="disabled"'
+
     },
 
     initialize:function () {
@@ -39,8 +44,13 @@ window.FacturaModel = Backbone.RelationalModel.extend({
 
     guardar: function(){
 
+        var self = this;
+
         var options = {
             success: function(model, resp, xhr) {
+                self.model.set('botones_guardar','style="display:none;');
+                self.model.set('botones_imprimir','');
+
                 mensaje.notifyBar('Factura Guardada', 'success', false);
             },
 
@@ -48,7 +58,10 @@ window.FacturaModel = Backbone.RelationalModel.extend({
                 mensaje.notifyBar('Error Guardando Factura', 'error', false, true);
             }
         }
+
         return Backbone.sync('create', this, options);
+
+
     }
 
 

@@ -8,11 +8,12 @@ window.FacturaBotonesView = Backbone.View.extend({
     initialize:function () {
         console.log('Initializing Factura Botones View');
         this.template = _.template(tpl.get('factura-botones-template'));
-        this.options.botones.bind("change", this.render, this);
+        this.model.bind("change", this.render, this);
     },
 
     render:function () {
-        $(this.el).html(this.template({model:this.model.toJSON(),botones: this.options.botones}));
+        console.log('rendering BOTONES');
+        $(this.el).html(this.template({model:this.model.toJSON()}));
         return this;
     },
 
@@ -20,14 +21,11 @@ window.FacturaBotonesView = Backbone.View.extend({
 
         mensaje.notifyBar('Guardando Factura','wait', true, false);
 
-        this.options.botones.set('principal_label','CHANGOS');
-        this.options.botones.set('secundario_label','Imprimir');
-        this.options.botones.set('principal_clicked',1);
-
         this.$('#grabar_factura_botones').hide();
         this.$('#imprimir_factura_botones').show();
 
         this.model.guardar();
+
     },
 
     imprimirFactura: function()

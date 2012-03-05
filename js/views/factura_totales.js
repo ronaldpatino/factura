@@ -107,13 +107,7 @@ window.FacturaTotalesView = Backbone.View.extend({
         }
         else
         {
-            console.log(this.options.botones.get('principal_activo'));
             this.model.set('total', 0);
-            if (this.options.botones.get('principal_cliked') == 0 || this.options.botones.get('principal_activo') === '')
-            {
-                this.options.botones.set('principal_activo','disabled="disabled"')
-            }
-
         }
     }
 
