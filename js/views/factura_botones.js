@@ -24,6 +24,6 @@ window.FacturaBotonesView = Backbone.View.extend({
 
     imprimirFactura: function()
     {
-        mensaje.fancybox('http://localhost/haras/renovacion/comp/imprimir_factura/1');
+        mensaje.fancybox('http://localhost/haras/renovacion/comp/imprimir_factura/'+this.model.get('id_factura_creada'));
     }
 });
