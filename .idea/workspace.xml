@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="395529f5-5b46-4279-9762-098d88c668f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/factura.js" afterPath="$PROJECT_DIR$/js/models/factura.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/factura_botones.js" afterPath="$PROJECT_DIR$/js/models/factura_botones.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/factura.js" afterPath="$PROJECT_DIR$/js/views/factura.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/factura_botones.js" afterPath="$PROJECT_DIR$/js/views/factura_botones.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/factura_totales.js" afterPath="$PROJECT_DIR$/js/views/factura_totales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/item_factura.js" afterPath="$PROJECT_DIR$/js/views/item_factura.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/factura-botones-template.html" afterPath="$PROJECT_DIR$/tpl/factura-botones-template.html" />
     </list>
     <ignored path="factura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="factura.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/views/factura.js">
+      <file leaf-file-name="factura_totales.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="73" selection-start="455" selection-end="455" vertical-scroll-proportion="1.630137">
+            <state line="100" column="93" selection-start="3378" selection-end="3378" vertical-scroll-proportion="11.643836">
               <folding />
             </state>
           </provider>
@@ -71,9 +64,9 @@
         <option value="$PROJECT_DIR$/tpl/factura-botones-template.html" />
         <option value="$PROJECT_DIR$/js/models/factura.js" />
         <option value="$PROJECT_DIR$/js/views/factura_botones.js" />
+        <option value="$PROJECT_DIR$/js/views/factura.js" />
         <option value="$PROJECT_DIR$/js/views/item_factura.js" />
         <option value="$PROJECT_DIR$/js/views/factura_totales.js" />
-        <option value="$PROJECT_DIR$/js/views/factura.js" />
       </list>
     </option>
   </component>
@@ -314,7 +307,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2621951" sideWeight="0.8844985" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621951" sideWeight="0.25987843" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2621951" sideWeight="0.25987843" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -360,7 +353,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fancybox to show print dialog to print invoices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buttons status member to the model of factura so that I can track easily the changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -387,6 +380,7 @@
     <MESSAGE value="Adding a notify bar to the app" />
     <MESSAGE value="Added notify bar to show status msgs" />
     <MESSAGE value="Added fancybox to show print dialog to print invoices" />
+    <MESSAGE value="Added buttons status member to the model of factura so that I can track easily the changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -457,20 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="9" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.6508689">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="45" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.6919355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/models/factura_botones.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="27" selection-start="179" selection-end="179" vertical-scroll-proportion="0.21484992">
@@ -501,7 +481,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/factura.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="73" selection-start="455" selection-end="455" vertical-scroll-proportion="1.630137">
+        <state line="14" column="73" selection-start="455" selection-end="455" vertical-scroll-proportion="0.37598735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/item_factura.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="13" selection-start="4451" selection-end="4451" vertical-scroll-proportion="2.0473933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/factura_totales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="93" selection-start="3378" selection-end="3378" vertical-scroll-proportion="11.643836">
           <folding />
         </state>
       </provider>

@@ -35,14 +35,15 @@ window.FacturaTotalesView = Backbone.View.extend({
 
     calcularDescuento: function(){
 
-        console.log('calcular descuento ??')
+
         if (this.descuento_tipo_interfaz == 1)
         {
             if (this.model.get('subtotal') > this.descuento_interfaz)
             {
                 var descuento_interfaz = this.descuento_interfaz;
-                var descuento_ui = this.model.get('subtotal') - this.descuento_interfaz;
-                this.model.set('descuento_ui', descuento_ui);
+                var descuento_calculado = this.model.get('subtotal') - descuento_interfaz;
+                descuento_calculado = mat.redondear(descuento_calculado,2);
+                this.model.set('descuento_ui', descuento_calculado);
                 this.model.set('descuento_tipo', this.descuento_tipo_interfaz);
                 this.model.set('descuento', this.descuento_interfaz);
             }
@@ -57,8 +58,9 @@ window.FacturaTotalesView = Backbone.View.extend({
             if (this.descuento_interfaz < 100)
             {
                 var descuento_porcentaje = (this.model.get('subtotal') * this.descuento_interfaz)/100;
-                var descuento_ui = this.model.get('subtotal') - descuento_porcentaje;
-                this.model.set('descuento_ui', descuento_ui);
+                var descuento_calculado = this.model.get('subtotal') - descuento_porcentaje;
+                descuento_calculado = mat.redondear(descuento_calculado,2);
+                this.model.set('descuento_ui', descuento_calculado);
                 this.model.set('descuento_tipo', this.descuento_tipo_interfaz);
                 this.model.set('descuento', this.descuento_interfaz);
             }
@@ -96,14 +98,12 @@ window.FacturaTotalesView = Backbone.View.extend({
     calcularTotal: function () {
         if (this.model.get('subtotal') > 0 ) {
 
-            var total_factura = (   this.model.get('subtotal') -
-                this.model.get('descuento')) +
-                this.model.get('iva');
+            var total_factura = ( this.model.get('descuento_ui')) +    this.model.get('iva');
 
             total_factura = mat.redondear(total_factura,2);
 
             this.model.set('total', total_factura);
-            this.options.botones.set('principal_activo','')
+
         }
         else
         {
