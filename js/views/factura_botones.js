@@ -12,7 +12,6 @@ window.FacturaBotonesView = Backbone.View.extend({
     },
 
     render:function () {
-        console.log('rendering BOTONES');
         $(this.el).html(this.template({model:this.model.toJSON()}));
         return this;
     },
@@ -20,12 +19,7 @@ window.FacturaBotonesView = Backbone.View.extend({
     guardarFactura: function () {
 
         mensaje.notifyBar('Guardando Factura','wait', true, false);
-
-        this.$('#grabar_factura_botones').hide();
-        this.$('#imprimir_factura_botones').show();
-
         this.model.guardar();
-
     },
 
     imprimirFactura: function()
