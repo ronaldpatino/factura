@@ -46,4 +46,21 @@ mat = {
         var multiplier = Math.pow(10, decimals);
         return _round(number * multiplier) / multiplier;
     }
+};
+
+mensaje = {
+
+    notifyBar: function(mensaje, cls, waitSignal, cerrar)
+    {
+        window.$.notifyBar({
+            html: mensaje,
+            delay: 2000,
+            animationSpeed: "normal",
+            waitSignal: waitSignal,
+            cls: cls,
+            closeOnClick: cerrar
+
+        });
+
+    }
 }

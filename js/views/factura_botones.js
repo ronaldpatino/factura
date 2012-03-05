@@ -16,6 +16,9 @@ window.FacturaBotonesView = Backbone.View.extend({
     },
 
     guardarFactura: function () {
+
+        mensaje.notifyBar('Guardando Factura','wait', true, false);
+
         this.options.botones.set('principal_label','CHANGOS');
         this.options.botones.set('secundario_label','Imprimir');
         this.options.botones.set('principal_clicked',1);

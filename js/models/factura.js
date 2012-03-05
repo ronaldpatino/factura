@@ -41,11 +41,11 @@ window.FacturaModel = Backbone.RelationalModel.extend({
 
         var options = {
             success: function(model, resp, xhr) {
-                alert('tout est bien!!!')
+                mensaje.notifyBar('Factura Guardada', 'success', false);
             },
 
             error: function(model, resp, xhr) {
-                alert('error');
+                mensaje.notifyBar('Error Guardando Factura', 'error', false, true);
             }
         }
         return Backbone.sync('create', this, options);
